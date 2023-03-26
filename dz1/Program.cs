@@ -85,6 +85,8 @@ Console.Write("Забудь все, что ты вводил до этого м�
 string strNumChet = Console.ReadLine();
 int numChet = Convert.ToInt32(strNumChet);
 
+int numberOfYourLife = 1;
+
 if (numChet <=0)
 {
     Console.WriteLine("Ах ты ж житрожопый. Вводить надо число больше 0! Твоя судьба мрачна...");
@@ -92,13 +94,13 @@ if (numChet <=0)
 }
 else 
 {
-    while(numChet > 0)
+    while(numberOfYourLife <= numChet)
     {
-        if(numChet%2==0)
+        if(numberOfYourLife%2==0)
         {
-            Console.Write($"{numChet}, ");
+            Console.Write($"{numberOfYourLife}, ");
         }
-        numChet = numChet-1;
+        numberOfYourLife = numberOfYourLife+1;
     }
     Console.WriteLine("GoToVo. Твоя судьба светла, как свет в фонарике с батарейкой дюрасел");
 }
