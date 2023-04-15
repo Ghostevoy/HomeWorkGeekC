@@ -270,7 +270,7 @@ bool restart()
 
     }
 }
-
+// приветствие в консоли
 void helloStart()
 {
     for (int k = 1; k <= 5; k++)
